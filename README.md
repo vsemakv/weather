@@ -1,5 +1,5 @@
 # Weather app with using api 
-# https://eclectic-sunburst-8e9126.netlify.app/
+# https://jocular-rabanadas-9858ce.netlify.app/
 
 ## Build Setup
 
