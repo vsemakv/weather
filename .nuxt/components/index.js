@@ -1,10 +1,10 @@
-export { default as VCardsList } from '../../components/VCardsList.vue'
-export { default as VChart } from '../../components/VChart.vue'
-export { default as VLogo } from '../../components/VLogo.vue'
-export { default as VModal } from '../../components/VModal.vue'
-export { default as VModalError } from '../../components/VModalError.vue'
-export { default as VNavigation } from '../../components/VNavigation.vue'
-export { default as VSelect } from '../../components/VSelect.vue'
+export const VCardsList = () => import('../../components/VCardsList.vue' /* webpackChunkName: "components/v-cards-list" */).then(c => wrapFunctional(c.default || c))
+export const VChart = () => import('../../components/VChart.vue' /* webpackChunkName: "components/v-chart" */).then(c => wrapFunctional(c.default || c))
+export const VLogo = () => import('../../components/VLogo.vue' /* webpackChunkName: "components/v-logo" */).then(c => wrapFunctional(c.default || c))
+export const VModal = () => import('../../components/VModal.vue' /* webpackChunkName: "components/v-modal" */).then(c => wrapFunctional(c.default || c))
+export const VModalError = () => import('../../components/VModalError.vue' /* webpackChunkName: "components/v-modal-error" */).then(c => wrapFunctional(c.default || c))
+export const VNavigation = () => import('../../components/VNavigation.vue' /* webpackChunkName: "components/v-navigation" */).then(c => wrapFunctional(c.default || c))
+export const VSelect = () => import('../../components/VSelect.vue' /* webpackChunkName: "components/v-select" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
