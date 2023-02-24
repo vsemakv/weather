@@ -71,6 +71,7 @@
                 border: none;
                 color: white;
 
+
                 &:first-child { 
                     background-color: green;
                 }

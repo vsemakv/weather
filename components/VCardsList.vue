@@ -4,8 +4,8 @@
         li(v-for="(weather, idx) of weathers").cards__list-item 
             .card(:class="{'hideButton': isHide}")
                 img(src="@/assets/images/icons/close.svg", alt="Close" @click="deleteCard(idx)" ).card__button-close 
-                img(src="@/assets/images/icons/favorite1.svg", v-if="!weather.isFavorite" alt="Add to favorite" @click="chooseFavorite(idx, weather)" :class="{'hideButton': $store.state.favorites.isFavorite}").card__button-favorite
-                img(src="@/assets/images/icons/favorite2.svg", v-else alt="Your favorite" @click="chooseFavorite(idx, weather)" :class="{'favorite': $store.state.favorites.isFavorite}").card__button-favorite
+                img(src="@/assets/images/icons/favorite1.svg", v-if="!weather.isFavorite" alt="Add to favorite" @click="chooseFavorite(idx, weather)").card__button-favorite
+                img(src="@/assets/images/icons/favorite2.svg", v-else alt="Your favorite" @click="chooseFavorite(idx, weather)").card__button-favorite
                 p.card__title City: {{ weather.name }} 
                 p.card__temp() Temp: {{ weather.main.temp }} K;
                 p.card__feels Feels like: {{ weather.main.feels_like }} K;
@@ -30,7 +30,6 @@ import VChart from "@/components/VChart.vue";
         data() {
             return {
                 isHide: false,
-                isFavorite: false,
                 isDelete: false,
                 tmpIdx: null,
                 isFull: false,
@@ -44,10 +43,6 @@ import VChart from "@/components/VChart.vue";
                 favoritesList: "favorites/getFavorite",
                 favorite: "weather/getFavorite" 
             }),
-            calculateTemp(){
-                this.celsiusTemp = Math.floor(this.weathers.temp)
-                this.celsiusFeel = Math.floor(this.weathers.main.feels_like)
-            }
         },
         methods: {
             callDelete(idx) {
@@ -84,8 +79,8 @@ import VChart from "@/components/VChart.vue";
 
             },
             chooseFavorite(idx, city){
-                    this.$store.commit('weather/updateFavorite', idx)
-                    this.$store.dispatch("favorites/setFavorite", city);
+                this.$store.commit('weather/updateFavorite', idx)
+                this.$store.dispatch("favorites/setFavorite", city);
             }
         }
     }

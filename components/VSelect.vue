@@ -94,13 +94,12 @@ import ua from "@/assets/ua.json"
         overflow-y: scroll;
         z-index: 2;
 
-
-
         &-item { 
             background-color: white;
             border: 1px solid grey;
             border-top: none;
             padding: 5px 5px;
+            cursor: pointer;
         }
     }
 }

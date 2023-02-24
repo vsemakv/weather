@@ -3,7 +3,7 @@
     .container 
         VLogo
         VNavigation    
-        ul(v-for="(favorite, idx) of favoritesList").favorite__cards
+        ul(v-for="(favorite, idx) of list").favorite__cards
             li.favorite__cards-item
                 .card(:class="{'hideButton': isHide}")
                     img(src="@/assets/images/icons/close.svg", alt="Close" @click="deleteCard(idx)" ).card__button-close 
