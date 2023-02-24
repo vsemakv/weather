@@ -1,0 +1,23 @@
+{
+  "VCardsList": {
+    "description": "Auto imported from components/VCardsList.vue"
+  },
+  "VChart": {
+    "description": "Auto imported from components/VChart.vue"
+  },
+  "VLogo": {
+    "description": "Auto imported from components/VLogo.vue"
+  },
+  "VModal": {
+    "description": "Auto imported from components/VModal.vue"
+  },
+  "VModalError": {
+    "description": "Auto imported from components/VModalError.vue"
+  },
+  "VNavigation": {
+    "description": "Auto imported from components/VNavigation.vue"
+  },
+  "VSelect": {
+    "description": "Auto imported from components/VSelect.vue"
+  }
+}

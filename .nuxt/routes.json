@@ -1,0 +1,16 @@
+[
+  {
+    "name": "favorite",
+    "path": "/favorite",
+    "component": "/Users/vladsemak/Desktop/github/pandaTest/weather/pages/favorite.vue",
+    "chunkName": "pages/favorite",
+    "_name": "_04d3dbda"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/vladsemak/Desktop/github/pandaTest/weather/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_a56ffa2a"
+  }
+]
